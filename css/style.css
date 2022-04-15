@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-font-smoothing:antialiased;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'poppins', sans-serif ;
+    margin-bottom: 10rem;
+}
+#header{
+    background-color: #151f28;
+    box-shadow: 0 3px 3px #ccc;
+}
+#header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;   
+}
+#header nav .logo img{
+margin: 10px 100px;
+height: 50px;
+width: auto;
+}
+#header nav .menu{
+    padding: 0 100px;
+    font-weight: 900;
+    font-size: small;
+    
+}
+#header nav .menu a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 50px;
+    transition: all .5s ease;
+}
+#header nav .menu a:hover{
+    color: #867878;
+}
+#header nav .menu :last-child{
+color : #fff;
+background-color: #867878;
+border-radius: 50px;
+}
+#header nav .menu :last-child:hover{
+background-color: #fff;
+border : solid 2px #867878;
+color : #867878;
+}
+#hero{
+    display: flex;
+    background-color:#151f28;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 85%, 0 100%);
+    padding-bottom: 3rem;
+}
+#left img{
+    height: 500px;
+    margin: 36px 72px;
+    border: #867878 groove 4px;
+    border-radius: 100%; 
+}
+#hero #right{
+color : white;
+}
+#hero #right h1{
+   color: #867878;
+   font-size: 2rem;
+   font-weight: 500;
+}
+#hero #right span{
+   color: #867878;
+}
+#hero #right h2{
+   font-size: 4rem;
+   font-weight: 300;
+   margin-bottom: 30px;
+}
+#hero #right button{
+   background: transparent;
+   color: #867878;
+   font-family: 'poppins', sans-serif;
+   border-color: #867878;
+   border-width: 3px;
+   padding: 10px;
+}
+#hero #right button:hover{
+   background: #867878;
+   color: #fff;
+   transition: all 0.5s ease;
+   transform: scale(1.1);
+}
+#about{
+   padding: 7rem 20rem;
+   align-items: center;
+   background: url(../images/undraw_ideas_re_7twj.svg);
+   background-repeat: no-repeat;
+   background-position: 70.8rem 28rem;
+   background-size: 24rem;
+}
+#about .container{
+   display: flex;
+   align-items: center;
+   border: 2px groove #151f28;
+   transition-duration: 0.5s;
+}
+#about .container:hover{
+    transform: scale(1.1);
+}
+#about .container .left-2{
+   margin-bottom: -6px;
+}
+#about .container .left-2 img{
+   width: 320px;
+   border-right: 2px solid #151f28;
+}
+#about .container .right-2{
+  padding: 0  100px; 
+}
+#about .container .right-2 h1{
+   margin-bottom: 20px;
+   font-weight: 400;
+   font-size: 30px;
+}
+#about .container .right-2 h1 span{
+   color: #867878;
+}
+#about .container .right-2 h3{
+   font-size: 20px;
+   font-weight: 400;
+   margin-bottom: 15px;
+}
+#about .container .right-2 h3 span{
+   color: #867878;
+   font-weight: 700;
+}
+#about .container .right-2 p{
+   font-family: 'lato', sans-serif;
+   font-weight: 300;
+   line-height: 1.8;
+   
+}
+#services{
+   padding-bottom: 6rem;
+   background-color: #151f28;
+}
+.section-heading{
+color: #fff;
+text-align: center;
+margin-bottom: 1rem;
+padding-top: 50px;
+}
+.section-heading span{
+   color: #867878;
+}
+.section-heading + p{
+color: #fff;
+font-family: 'lato', sans-serif;
+text-align: center;
+margin-bottom: 5rem;
+}
+.card-wrapper img{
+   width: 70px;
+   background-color: #867878;
+   padding: 15px;
+   position: absolute;
+   top: -2.5rem;
+   transform: translateX(-50%);
+}
+section#services .card-wrapper{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-column-gap: 2rem;
+grid-row-gap: 6rem;
+padding: 30px 30px;
+margin: 0 200px;   
+}
+section#services .card-wrapper .card{
+background: #fff;
+padding: 3rem 2rem;
+text-align: center;
+position: relative;
+transition:all 0.3s ease;
+}
+#services .card-wrapper .card:hover{
+    color: #fff;
+    background-color: #42515f;
+    transform: scale(1.1);
+}
+section#services .card-wrapper .card h2{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section#services .card-wrapper .card p{
+    font-family: 'lato', sans-serif;
+    color: #b2b0b0;
+    line-height: 1.4;
+    font-weight: 400;
+}    
+.freelance{
+    margin-top: 1px;
+    padding-top: 10rem;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/camera.png);
+    color: #fff;
+    font-size: larger;
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 85%, 0 100%);
+}
+.freelance button{
+   background: #867878;
+   color: #fff;
+   font-family: 'poppins', sans-serif;
+   border-color: #867878;
+   border-width: 3px;
+   padding: 10px;
+   margin-top:2.5rem;
+   margin-bottom: 15rem;
+}
+.freelance button:hover{
+    background: transparent;
+   color: #fff;
+   transition: all .5s ease;  
+}
+#reviews .container{
+    text-align: center;
+    padding-top: 6rem;
+}
+#reviews .container span{
+    color: #867878;
+}
+#reviews .container .rev{
+    padding-top: 0.4rem;
+    padding-bottom: 3rem;
+    color: #898989;
+}
+#reviews .slider .slide img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+#reviews .slider .slide{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20rem;
+    font-family: 'lato', sans-serif;
+    color: #898989;
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+  transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+#reviews .slider .slide p{
+    font-family: 'lato', sans-serif;
+    margin-bottom: 1rem;
+}
+#reviews .slider .slide span{
+    font-size: 0.8rem;
+    color: #151f28;
+    font-weight:500 ;
+    
+
+}
+#reviews .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+#reviews .slider-dots{
+    margin-top: 2rem;
+}
+#reviews .slider-dots button{
+    font-size: 0;
+    width: 15px;
+    height: 6px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background-color: #898989;
+    border-radius: 50px;
+    cursor: pointer;
+}  
+#reviews .dots li.slick-active button{
+    background-color: #867878;
+    width: 30px;
+}
