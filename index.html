@@ -4,213 +4,323 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Rubik&family=Noto+Sans+KR&family=Varela+Round&family=Nunito:ital,wght@0,400;1,200&family=Permanent+Marker&family=Georama:wght@400&family=Yellowtail&family=Montserrat:wght@400&family=Jomhuria&family=Noto+Sans+JP&family=Mate+SC&family=Shadows+Into+Light&family=Benne&family=Dela+Gothic+One&display=swap"
       rel="stylesheet"
     />
+
+    <!-- STYLESHEETS -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- FAVICON -->
+  <link href="images/face_co.svg" rel="icon" type="image/x-icon" />
+
+    <title>Aditya Khunteta</title>
   </head>
   <body>
-    <header id="header">
-      <nav>
-        <div class="logo">
-          <img src="images/Aditya2.png" alt="" />
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light fix">
+      <div class="container">
+        <a class="navbar-brand" href="#">Aditya Khunteta</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto snip1198">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="menu">
-          <a href="#hero">HOME</a>
-          <a href="#about">ABOUT</a>
-          <a href="#services">SERVICES</a>
-          <a href="#reviews">BLOG</a>
-          <a href="#">CONTACT</a>
-        </div>
-      </nav>
-    </header>
-    <div id="hero">
-      <div id="left">
-        <img src="images/PicsArt_01-07-11.32.47-modified.png" alt="" />
       </div>
-      <div id="right">
-        <h1>Aditya Khunteta</h1>
-        <h2>I'm a Web <span>Developer</span></h2>
-        <button>DOWNLOAD RESUME</button>
+    </nav>
+
+    <div id="home">
+      <div class="row row-cols-lg-2 mx-0">
+        <div class="cols-lg-7 container">
+          <h1>
+            Hi <img class="bitmoji" src="images/bitmoji.png" alt="" />, I'm
+            Aditya.
+          </h1><br>
+          
+
+          <div class="py-3">
+            <div class="output" id="output">
+              <h3 class="cursor"></h3>
+            </div>
+          </div>
+          <!-- <h3>
+            Welcome to my Webpage.
+         </h3> -->
+          <div class="contact-container">
+            <ul class="social-icons">
+              <li title="Linkedin" class="hvr-grow-rotate">
+                <a href="https://www.linkedin.com/in/adityakhunteta/" target="_blank"> <i class="fa fa-linkedin"></i></a>
+              </li>
+              <li title="Github" class="hvr-grow-rotate">
+                <a href="https://github.com/adityakhuteta/" target="_blank"><i class="fa fa-github"></i></a>
+              </li>
+                <li title="G-Mail" class="hvr-grow-rotate">
+                    <a href="mailto:keshavkhuteta@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+                  </li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-lg-5">
+          <img src="images/3411109.jpg" alt="" />
+        </div>
       </div>
     </div>
 
-    <section id="about">
-      <div class="container">
-        <div class="left-2">
-          <img src="images/IMG_20210803_222044.jpg" alt="" />
+    <div id="about">
+      <h1 class="heading">ABOUT ME</h1>
+      <div class="row row-cols-lg-4 mx-auto justify-content-lg-center">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 container">
+          <img class="mx-auto" src="images/aditya.jpg" alt="">
         </div>
-        <div class="right-2">
-          <h1>About <span>Me</span></h1>
-          <h3>Hello! I'm <span>Aditya Khunteta.</span></h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
-            doloribus delectus nisi ducimus molestias optio nesciunt expedita
-            consequuntur cum voluptatum, illum fuga! Officia, mollitia aliquid,
-            consequatur natus autem culpa veniam amet nemo reprehenderit dicta
-            sed aut.<br />
-            itaque totam molestias expedita eius nam, voluptatum
-          </p>
+        <div class="col-lg-4 container">
+          <h2>Welcome! I’m happy you’re here😄. <br> I'm Aditya Khunteta from Sawai Madhopur, Rajasthan🏡. Currently, I'm a BCA undergrad student at JECRC University, Jaipur.<br><br> I am a Full Stack Web Developer who likes to work on Frontend. <br><br> Also, I love to edit videos and do graphic designing when I'm free.<br><br>Other than these, I am a foodie and I like to travel a lot.</h2>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+
+    <div id="work" class="section">
+      <h1 class="heading">MY WORK</h1>
+      <div class="row row-cols-lg-2 container-fluid mx-0 border-bottom">
+        <div class="col-lg-6 container">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/rca-1.png" class="d-block" alt="homepage">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/rca-2.png" class="d-block" alt="chat page">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-5 container">
+          <h4 class="small-header"><a href="https://github.com/adityakhuteta/realtime-chat-application" target="_blank" rel="noopener noreferrer">Personal Project</a></h4>
+          <h2>Realtime Chat Application</h2>
+          <p>Made a realtime chat application using socket.io which enables users to chat in realtime.</p><hr>
+          <button class="btn stacks" disabled>NodeJS</button>
+          <button class="btn stacks" disabled>ReactJS</button>
+          <button class="btn stacks" disabled>MongoDB</button>
+          <button class="btn stacks" disabled>HTML</button>
+          <button class="btn stacks" disabled>CSS</button><hr>
+          
+          <button class="btn btn-dark links"><a href="https://github.com/adityakhuteta/realtime-chat-application" target="_blank" rel="noopener noreferrer">Source Code</a></button>
+          
         </div>
       </div>
-    </section>
-    <section id="services">
-      <div class="container">
-        <h1 class="section-heading"><span>OUR</span> SERVICES</h1>
-        <p>
-          We provide high standard clean website for your business solutions.
-        </p>
-        <div class="card-wrapper">
-          <div class="card">
-            <img src="images/brush.svg" alt="" />
-            <h2>Graphic Design</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto, quis!
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/code.svg" alt="" />
-            <h2>Web Development</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione,
-              perferendis.
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/marketing.svg" alt="" />
-            <h2>Media Marketing</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
-              quod?
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/computer.svg" alt="" />
-            <h2>Web Design</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio,
-              illum!
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/film.svg" alt="" />
-            <h2>Motion Graphics</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam, velit!
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/android.svg" alt="" />
-            <h2>Android Apps</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-              perspiciatis?
-            </p>
+      <div class="row row-cols-lg-2 container-fluid mx-0 mt-5 border-bottom">
+        <div class="col-lg-6 container">
+          <img src="images/nc-1.png" alt="homepage">
+        </div>
+        <div class="col-lg-5 container">
+          <h4 class="small-header">Personal Project</h4>
+          <h2>Netflix Clone</h2>
+          <p>Created a webapp which looks like netflix, using a dynamic
+            api(TMDB) to fetch the list of movies from their database.</p><hr>
+          <button class="btn stacks" disabled>ReactJS</button>
+          <button class="btn stacks" disabled>Redux</button>
+          <button class="btn stacks" disabled>Axios</button>
+          <button class="btn stacks" disabled>HTML</button>
+          <button class="btn stacks" disabled>CSS</button><hr>
+          <button class="btn btn-dark links"><a href="https://netflix-cl-main.netlify.app/" target="_blank" rel="noopener noreferrer">Visit</a></button>
+          <button class="btn btn-dark links"><a href="https://github.com/adityakhuteta/netflix-clone" target="_blank" rel="noopener noreferrer">Source Code</a></button>
+        </div>
+      </div>
+
+      <div class="row row-cols-lg-2 container-fluid mx-0 mt-5">
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/jobly.png" class="d-block w-100" alt="jobly-homepage">
+    </div>
+    <div class="carousel-item">
+      <img src="images/jobly-3.png" class="d-block w-100" alt="jobly-stats">
+    </div>
+    <div class="carousel-item">
+      <img src="images/jobly-2.png" class="d-block w-100" alt="jobly-jobs">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        <div class="col-lg-5 container">
+          <h4 class="small-header">Personal Project</h4>
+          <h2>Jobly</h2>
+          <p>Made a Job Application Tracker so you do not miss your next OA or an interview.</p><hr>
+          <button class="btn stacks" disabled>Bootstrap</button>
+          <button class="btn stacks" disabled>JavaScript</button>
+          <button class="btn stacks" disabled>NodeJS</button>
+          <button class="btn stacks" disabled>MongoDB</button><hr>
+          <button class="btn btn-dark links"><a href="http://joblly.herokuapp.com/" target="_blank" rel="noopener noreferrer">Visit</a></button>
+          <button class="btn btn-dark links"><a href="https://github.com/adityakhuteta/jobly" target="_blank" rel="noopener noreferrer">Source Code</a></button>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <div id="skills">
+      <h1 class="heading">SKILLS</h1>
+
+      <div class="row row-cols-lg-2 web-section container mx-auto border-bottom">
+        <div class="col-lg-3 container justify-content-end description">
+          <img class="mt-2" src="images/kisspng-web-development-service-benzylpenicilloyl-polylysi-allergy-5acc8d3e75dea7.4850889915233549424828_adobespark" alt="">
+          <h2>WEB DEVELOPMENT</h2>
+          <p>Experienced in working on both frontend and backend of websites. Also, worked on MongoDB.</p>
+        </div>
+        <div class="col-lg-8">
+          <div class="row web row-cols-lg-auto justify-content-end row-cols-md-auto">
+            <div class="col"><img src="images/react.png" alt="react"></div>
+            <div class="col"><img class="bootstrap ms-4" src="images/bootstrap-logo.png" alt="bootstrap-logo"></div>
+            
+            <div class="col"><img src="images/nodejs-1-logo.png" alt="nodejs-logo"></div>
+            <div class="col"><img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="expressjs-logo"></div>
+            <div class="col"><img class="mongo mt-4 justify-content-center" src="https://webassets.mongodb.com/_com_assets/cms/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png" alt="mongodb-logo"></div>
+            <div class="col"><img src="images/jquery-logo.png" alt="jquery-logo"></div>
+            <div class="col"><img src="images/git.png" alt="git-logo"></div>
+            <div class="col"><img class="heroku ms-2" src="images/heroku-logo.png" alt="heroku-logo"></div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="freelance">
-      <h1>We Create The Best For You.</h1>
-      <button>Work Samples</button>
-    </section>
-    <section id="reviews">
-      <div class="container">
-        <h1><span>Our</span> Clients</h1>
-        <p class="rev">
-          We provide high standard clean website for your business solutions.
-        </p>
-        <div class="slider">
-          <div class="slide">
-            <img src="images/client5.jpg" alt="" />
-            <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Distinctio sint nihil doloribus velit dolores harum nostrum eius
-              esse odit, beatae ex aliquid sit? Minus doloribus incidunt
-              possimus nemo, aperiam quibusdam."
-            </p>
-            <span>- Issac, Metabox</span>
+    </div>
+
+    <div id="contact">
+      <h1 class="heading">CONTACT ME</h1>
+      <h3 class="text-center mb-5">Got something on your mind?<br>Let's have a conversation.</h3>
+      
+      <div class="row row-cols-lg-3 container-fluid justify-content-center">
+        <div class="message-section col-lg-4 bg-dark py-4">
+          <div class="container">
+            <h2>Send me a message.</h2>
+            <form action="mailto:keshavkhuteta@gmail.com" method="post">
+              <div class="col-lg-6 my-2">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="col-lg-6 my-2">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="col-lg-12 my-2">
+                <textarea type="text" class="form-control" placeholder="Your Message" required></textarea>
+              </div>
+              <button class="btn btn-outline-danger">Send</button>
+            </form>
           </div>
-          <div class="slide">
-            <img src="images/client2.jpg" alt="" />
-            <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Distinctio sint nihil doloribus velit dolores harum nostrum eius
-              esse odit, beatae ex aliquid sit? Minus doloribus incidunt
-              possimus nemo, aperiam quibusdam."
-            </p>
-            <span>- Andrea, Grroww Solutions</span>
-          </div>
-          <div class="slide">
-            <img src="images/client3.jpg" alt="" />
-            <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Distinctio sint nihil doloribus velit dolores harum nostrum eius
-              esse odit, beatae ex aliquid sit? Minus doloribus incidunt
-              possimus nemo, aperiam quibusdam."
-            </p>
-            <span>- Lauren, Oreka Ltd.</span>
-          </div>
-          <div class="slide">
-            <img src="images/client4.jpg" alt="" />
-            <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Distinctio sint nihil doloribus velit dolores harum nostrum eius
-              esse odit, beatae ex aliquid sit? Minus doloribus incidunt
-              possimus nemo, aperiam quibusdam."
-            </p>
-            <span>- Jennifer, Synnotech</span>
-          </div>
-          <div class="slide">
-            <img src="images/lady.png" alt="" />
-            <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Distinctio sint nihil doloribus velit dolores harum nostrum eius
-              esse odit, beatae ex aliquid sit? Minus doloribus incidunt
-              possimus nemo, aperiam quibusdam."
-            </p>
-            <span>- Casslyn, DD Technologies</span>
+        </div>
+        <div class="col-lg-1 my-auto text-center">
+          <h1>OR</h1>
+        </div>
+        <div class="col-lg-4 bg-dark py-4 contact-section">
+          <div class="container text-center">
+            <h4 class="mb-4">Connect with me over social media.</h4>
+            <div class="row">
+              <div class="contact-container">
+                <ul class="social-icons">
+                  <li title="Linkedin" class="hvr-grow-rotate">
+                    <a href="https://www.linkedin.com/in/adityakhunteta/" target="_blank"> <i class="fa fa-linkedin"></i></a>
+                  </li>
+                  <li title="Github" class="hvr-grow-rotate">
+                    <a href="https://github.com/adityakhuteta" target="_blank"><i class="fa fa-github"></i></a>
+                  </li>
+                    <li title="G-Mail" class="hvr-grow-rotate">
+                        <a href="mailto:keshavkhuteta@gmail.com" target="_blank"><i class="fa fa-google"></i></a>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="row">
+              <div class="contact-container">
+                <ul class="social-icons">
+                  <li title="Facebook" class="hvr-grow-rotate">
+                    <a href="https://www.facebook.com/itsadityakhuteta" target="_blank"> <i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li title="Instagram" class="hvr-grow-rotate">
+                    <a href="https://www.instagram.com/adityakhuteta/" target="_blank"><i class="fa fa-instagram"></i></a>
+                  </li>
+                    <li title="Snapchat" class="hvr-grow-rotate">
+                        <a href="https://www.snapchat.com/add/adityakhuteta" target="_blank"><i class="fa fa-snapchat-ghost"></i></a>
+                      </li>
+                  </ul>
+                </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="slider-dots"></div>
-    </section>
-    <section class="work">
-      <div class="container"></div>
-    </section>
+    </div>
+    <div id="footer" class="py-2 text-center">
+      <h4>Made with ❤️ by Aditya | © 2021 Aditya Khunteta</h4>
+    </div>
+
     <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
     ></script>
     <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
     ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
